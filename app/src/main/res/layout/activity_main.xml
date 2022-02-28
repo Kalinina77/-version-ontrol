@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_video_calling_3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="23dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/SingIn"
+            android:layout_width="126dp"
+            android:layout_height="60dp"
+
+            android:fontFamily="@font/nunito_regular"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            app:cornerRadius="7dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/SingUp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:fontFamily="@font/nunito_regular"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            app:cornerRadius="7dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginBottom="225dp"
+        android:layout_marginEnd="34dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Email"
+            android:textColor="@color/blue" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="17dp"
+            android:padding="8dp"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+          />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Password"
+            android:textColor="@color/blue" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:background="@drawable/edit_text_style"
+            android:textColor="@color/blue"
+            android:padding="8dp"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+        <ImageView
+            android:id="@+id/GoogleSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_google_logo" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
